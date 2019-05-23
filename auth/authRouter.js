@@ -48,6 +48,9 @@ router.post("/login", (req, res) => {
       res.status(500).json(error);
     });
 });
+router.delete('/', (req, res) => {
+
+});
 
 function generateToken(user) {
     const payload ={
